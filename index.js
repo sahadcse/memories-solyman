@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/posts", postRoutes);
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send("Hello to Memories Api");
 });
 
@@ -30,5 +30,3 @@ mongoose
   )
   .catch((error) => console.log(error));
 
-
-mongoose.set("useFindAndModify", false);
